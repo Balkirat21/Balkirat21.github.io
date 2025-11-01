@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test: Forms and Buttons</title>
+</head>
+<body>
+    <h1>Test: Forms and Buttons</h1>
+
+    <!-- Task 1: Login Form -->
+    <section>
+        <h2>Task 1: User ID and Password</h2>
+        <h3>Login Form</h3>
+        <form>
+            <ul>
+                <li>User ID <input type="text" name="userid"></li>
+                <li>Password <input type="password" name="password"></li>
+                <li><button type="submit">Log in</button></li>
+            </ul>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Task 2: Radio Buttons and Checkboxes -->
+    <section>
+        <h2>Task 2: Radio Buttons and Checkboxes</h2>
+        <h3>Preferences Form</h3>
+        <form>
+            <fieldset>
+                <legend>Who is your favorite pony?</legend>
+                <ul>
+                    <li><label><input type="radio" name="pony" checked>Pinkie Pie</label></li>
+                    <li><label><input type="radio" name="pony">Rainbow Dash</label></li>
+                    <li><label><input type="radio" name="pony">Twilight Sparkle</label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Hotdog preferences</legend>
+                <ul>
+                    <li><label><input type="checkbox" name="vegan">Vegan</label></li>
+                    <li><label><input type="checkbox" name="onions">Onions</label></li>
+                </ul>
+            </fieldset>
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Task 3: Email, Website, Phone, Color Inputs -->
+    <section>
+        <h2>Task 3: Email, Website, Phone, and Color Inputs</h2>
+        <h3>Edit Your Preferences</h3>
+        <form>
+            <h4>Edit your preferences</h4>
+            <ul>
+                <li><label for="email">Email</label>
+                    <input type="email" id="email" name="email"></li>
+                <li><label for="website">Website</label>
+                    <input type="url" id="website" name="website"></li>
+                <li><label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone"></li>
+                <li><label for="fave-color">Favorite color</label>
+                    <input type="color" id="fave-color" name="fave-color"></li>
+                <li><button>Update preferences</button></li>
+            </ul>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Task 4: Dropdown Select Menu -->
+    <section>
+        <h2>Task 4: Dropdown Select Menu</h2>
+        <h3>Food Preferences</h3>
+        <form>
+            <ul>
+                <li>
+                    <label for="food">Pick your favorite food:</label>
+                    <select id="food" name="food">
+                        <optgroup label="Mains">
+                            <option>Salad</option>
+                            <option>Curry</option>
+                            <option>Pizza</option>
+                            <option>Fajitas</option>
+                        </optgroup>
+                        <optgroup label="Snacks">
+                            <option>Biscuits</option>
+                            <option>Crisps</option>
+                            <option>Fruit</option>
+                            <option>Breadsticks</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li><button>Submit choice</button></li>
+            </ul>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Task 5: Fieldsets with Legends -->
+    <section>
+        <h2>Task 5: Fieldsets with Legends</h2>
+        <h3>Comment Form</h3>
+        <form>
+            <fieldset>
+                <legend>Personal details</legend>
+                <p><label>Name: <input type="text" id="name" name="name"></label></p>
+                <p><label>Age: <input type="number" id="age" name="age"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Comment information</legend>
+                <p><label>Comment: <input type="text" id="comment" name="comment"></label></p>
+                <p><label>Email: <input type="email" id="email2" name="email2"></label></p>
+            </fieldset>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Task 6: Form Validation -->
+    <section>
+        <h2>Task 6: Form Validation</h2>
+        <h3>Support Query Form</h3>
+        <form>
+            <h4>Enter your support query</h4>
+            <ul>
+                <li>
+                    <label for="uname">User name:</label>
+                    <input type="text" name="uname" id="uname" required minlength="5" maxlength="20">
+                </li>
+                <li>
+                    <label for="email3">Email address:</label>
+                    <input type="email" name="email3" id="email3" required>
+                </li>
+                <li>
+                    <label for="phone2">Phone number:</label>
+                    <input type="tel" name="phone2" id="phone2" required maxlength="15">
+                </li>
+                <li>
+                    <label for="comment2">Comment:</label>
+                    <textarea name="comment2" id="comment2" required maxlength="200"></textarea>
+                </li>
+                <li><button type="submit">Submit comment</button></li>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>
